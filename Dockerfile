@@ -30,9 +30,9 @@ RUN make install && make datainstall
 RUN rm -rf /usr/local/share/games/torcs/config
 RUN cp -r config /usr/local/share/games/torcs/config
 
-COPY start.sh start.sh
-COPY start_vision.sh start_vision.sh
-COPY kill.sh kill.sh
+COPY ./vtorcs/start.sh start.sh
+COPY ./vtorcs/start_vision.sh start_vision.sh
+COPY ./vtorcs/kill.sh kill.sh
 
 # remove useless tools
 RUN apt-get remove -y make g++
