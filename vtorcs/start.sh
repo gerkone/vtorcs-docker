@@ -1,4 +1,4 @@
-vglrun torcs -nofuel -nodamage -nolaptime &
+torcs -nofuel -nodamage -nolaptime &
 
 sleep 0.5
 
