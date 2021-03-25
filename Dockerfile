@@ -38,7 +38,4 @@ COPY ./vtorcs/reset.sh reset.sh
 # remove useless tools
 RUN apt-get remove -y make g++
 
-# open scr server udp port
-EXPOSE 3101
-
 CMD ["/bin/bash"]
